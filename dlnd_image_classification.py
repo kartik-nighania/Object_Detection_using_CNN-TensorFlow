@@ -269,8 +269,6 @@ def output(x_tensor, num_outputs):
     output_layer = tf.matmul(x_tensor, weight)
 
     output_layer = tf.nn.bias_add(output_layer, bias)
-
-    output_layer = tf.nn.relu(output_layer)
    
     return output_layer
 
